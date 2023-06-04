@@ -1,13 +1,59 @@
-<!-- 
-1. Create a simple page having a header, main content, and a footer.
-
-2. Inside the header keep the brand name to the left and all the navigation to the right.
-
-4. Inside the main content take an article section having two columns. In the first column put a heading and some introductory text of the article and in the second column take an image.
-
-5. After the article section, take a gallery section, in which there will be two rows and in both the row there will be three columns. Each column must have a different image.
-
-6. After the gallery section footer will come.
-
-7. Use flexbox properties and values to create columns.
- -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flexbox</title>
+</head>
+<body>
+    <header>
+       <a href="#">
+        <img src="logo.svg" alt="logo">
+       </a>
+        <nav class="navigation">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </nav>
+      </header>
+      
+      <div class="main-content">
+        <section class="article">
+          <h2>This is the heading of the Article</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et mi in enim efficitur malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean luctus, diam id consectetur venenatis, sem nunc faucibus elit, nec tempor leo purus at felis.</p>
+        </section>
+        
+        <section class="image">
+          <img src="dog.jpeg" alt="Article Image">
+        </section>
+      </div>
+      
+      <section class="gallery">
+        <div class="item">
+          <img src="dog1.jpeg" alt="Image 1">
+        </div>
+        <div class="item">
+          <img src="dog2.jpeg" alt="Image 2">
+        </div>
+        <div class="item">
+          <img src="dog3.jpeg" alt="Image 3">
+        </div>
+        <div class="item">
+          <img src="dog1.jpeg" alt="Image 4">
+        </div>
+        <div class="item">
+          <img src="dog2.jpeg" alt="Image 5">
+        </div>
+        <div class="item">
+          <img src="dog3.jpeg" alt="Image 6">
+        </div>
+      </section>
+      
+      <footer>
+        &copy; 2023 Brand Name. All rights reserved.
+      </footer>
+    </body>
+    </html>
+    
