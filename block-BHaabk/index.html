@@ -3,57 +3,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
     <link rel="stylesheet" href="style.css">
-    <title>Flexbox</title>
+    <script src="https://kit.fontawesome.com/c05df2cbea.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <header>
-       <a href="#">
-        <img src="logo.svg" alt="logo">
-       </a>
-        <nav class="navigation">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Contact</a>
-        </nav>
-      </header>
-      
-      <div class="main-content">
-        <section class="article">
-          <h2>This is the heading of the Article</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et mi in enim efficitur malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean luctus, diam id consectetur venenatis, sem nunc faucibus elit, nec tempor leo purus at felis.</p>
-        </section>
-        
-        <section class="image">
-          <img src="dog.jpeg" alt="Article Image">
-        </section>
-      </div>
-      
-      <section class="gallery">
-        <div class="item">
-          <img src="dog1.jpeg" alt="Image 1">
+<body id="top">
+    <header class="header">
+        <div class="container flexbox">
+            <a href="#">
+                <img src="logo.svg">
+            </a>
+            <nav class="nav">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+            </nav>
         </div>
-        <div class="item">
-          <img src="dog2.jpeg" alt="Image 2">
+    </header>
+    <main>
+        <section class="main-content">
+        <article class="container flexbox">
+            <div class="col">
+                <h1 class="heading"> This is the Article Heading</h1>
+                <P class="article-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem accusamus deleniti harum. Error, provident, iusto excepturi libero consequatur aliquam ipsa, similique rem saepe quae suscipit quod autem nisi numquam natus.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem accusamus deleniti
+                </P>
+
+            </div>
+            
+            <div class="col">
+                <img src="forest.jpeg" alt="forest" class="article-image">
+            </div>
+
+        </article>
+    </section>
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="heading2">Gallery</h2>
+            <div class="flexbox">
+                <div class="col2">
+                    <img src="deer.jpeg" alt="deer">
+                </div>
+                <div class="col2">
+                    <img src="lion.jpeg" alt="lion">
+                </div>
+                <div class="col2">
+                    <img src="dog.jpeg" alt="dog">
+                </div>
+            
+            
+                <div class="col2">
+                    <img src="squirrel.jpeg" alt="squirrel">
+                </div>
+                <div class="col2">
+                    <img src="elephant.jpeg" alt="elephant">
+                </div>
+                <div class="col2">
+                    <img src="zeebra.jpeg" alt="zeebra">
+                </div>
+            
+            </div>
         </div>
-        <div class="item">
-          <img src="dog3.jpeg" alt="Image 3">
         </div>
-        <div class="item">
-          <img src="dog1.jpeg" alt="Image 4">
+    </section>
+    </main>
+    <footer>
+        <div class="container">
+            <nav>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </nav>
         </div>
-        <div class="item">
-          <img src="dog2.jpeg" alt="Image 5">
-        </div>
-        <div class="item">
-          <img src="dog3.jpeg" alt="Image 6">
-        </div>
-      </section>
-      
-      <footer>
-        &copy; 2023 Brand Name. All rights reserved.
-      </footer>
-    </body>
-    </html>
-    
+    </footer>
+    <a href="#top" class="circle">Click Me</a>
+</body>
+</html>
