@@ -67,6 +67,9 @@ table {
     color: #FFFFFF;
     margin-left: 12px;
 }
+.nav .link{
+    color: #37B667;
+}
 .gallery{
     padding: 60px 0;
     text-align: center;
