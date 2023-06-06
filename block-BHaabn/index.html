@@ -1,8 +1,61 @@
-<!-- 
-- Create a gallery using flexbox according to the layout shown below.
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gallery|Flexbox</title>
+    <script src="https://kit.fontawesome.com/c05df2cbea.js" crossorigin="anonymous">
 
-![Flex Shrink Property](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/flexbox/ex-1.png)
-
-- Using CSS resets is necessary.
-- Use semantic tags and keep the nesting and indentation proper.
--->
+    </script>
+</head>
+<header class="header">
+    <div class="container flex">
+        <a href="#">
+            <img src="assets/logo.svg">
+        </a>
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">Gallery</a>
+            <a href="#">About</a>
+        </nav>
+    </div>
+</header>
+<body>
+<section class="gallery">
+    <div class="container">
+        <h1>Gallery</h1>
+        <div class="flex">
+            <div class="col">
+                <img src="assets/01.png" alt="image1">
+            </div>
+            <div class="col">
+                <img src="assets/02.png" alt="image1">
+            </div>
+            <div class="col">
+                <img src="assets/03.png" alt="image1">
+            </div>
+            <div class="col">
+                <img src="assets/04.png" alt="image1">
+            </div>
+            <div class="col">
+                <img src="assets/05.png" alt="image1">
+            </div>
+            <div class="col">
+                <img src="assets/06.png" alt="image1">
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container flex">
+        <small>&copy;AltCampus</small>
+        <nav>
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+        </nav>
+    </div>
+</footer>
+    
+</body>
+</html>
