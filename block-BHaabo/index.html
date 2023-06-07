@@ -1,8 +1,62 @@
-<!-- 
-- Create a page using flexbox according to the layout shown below.
-
-![Flex Shrink Property](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/flexbox/ex-2.png)
-
-- Using CSS resets is necessary.
-- Use semantic tags and keep the nesting and indentation proper. 
--->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Blog Dashboard</title>
+</head>
+<body>
+    <header>
+        <div class="container flex">
+            <a href="#" class="brand-logo">
+                <img src="assets/logo.svg" alt="logo">
+            </a>
+            <nav>
+                <a href="#">
+                    <img src="assets/icons/bell.svg" class="bell">
+                    <h2>Sarah Jone</h2>
+                    <img src="assets/icons/user.svg" class="user-icon">
+                </a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <aside class="aside">
+                    <nav class= "nav flex"> 
+                    
+                    <a href="#">
+                        <img src="assets/icons/dashboard.svg">Dashboard
+                    </a>
+                
+                    <a href="#">
+                        <img src="assets/icons/article.svg">Articles
+                    </a>
+                
+                    <a href="#">
+                        <img src="assets/icons/analytics.svg">Analytics
+                    </a>
+                
+                    <a href="#">
+                        <img src="assets/icons/inbox.svg">Inbox
+                    </a>
+                
+                    <a href="#">
+                        <img src="assets/icons/setting.svg">Settings
+                    </a>
+                
+                    <a href="#" class="log-out">
+                        <button class="button">
+                        <img src="assets/icons/log-out.svg" class="logout"> Logout
+                    
+                    </button></a>
+                </nav>
+                
+                </aside>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
